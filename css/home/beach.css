@@ -1,0 +1,87 @@
+.beach {
+  display: grid;
+  grid-template-columns: 6fr 5fr;
+  gap: 130px;
+  padding: 120px 0px 120px 0px;
+}
+
+.beach-info h1 {
+  padding-bottom: 60px;
+}
+
+.beach-info-content li {
+  padding: 30px 0px 30px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.beach-info-content li:nth-child(1):before {
+  content: url("../../icon/chinelo.svg");
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.beach-info-content li:nth-child(2):before {
+  content: url("../../icon/coco.svg");
+  display: inline-block;
+  margin-right: 30px;
+}
+.beach-info-content li:nth-child(3):before {
+  content: url("../../icon/boia.svg");
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.beach-info-content li:nth-child(1),
+.beach-info-content li:last-child {
+  padding: 30px 0px 30px 0px;
+  border-top: 2px solid var(--c1);
+  border-bottom: 2px solid var(--c1);
+}
+
+.beach-info-content {
+  padding-bottom: 30px;
+}
+
+.beach-info p + P {
+  margin-top: 15px;
+}
+
+.beach-map p {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+.beach-map p::before {
+  content: url("../../icon/dec-topico.svg");
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.beach-map span {
+  font: 400 0.875rem/1.42 "Nunito", sans-serif;
+  color: var(--c4);
+  display: flex;
+  align-items: center;
+}
+.beach-map span + span {
+  margin-top: 5px;
+}
+
+.beach-map span::before {
+  content: "";
+  width: 8px;
+  height: 2px;
+  display: inline-block;
+  background: var(--b1);
+  margin-right: 5px;
+}
+
+.beach-images {
+  display: grid;
+  justify-items: center;
+  place-content: start;
+}

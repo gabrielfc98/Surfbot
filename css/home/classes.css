@@ -1,0 +1,125 @@
+.class-bg {
+  background: var(--c1);
+  position: relative;
+}
+
+.class-bg::before {
+  content: "";
+  position: absolute;
+  background: url("../../icon/dec-ondas.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200.21px;
+  height: 93px;
+}
+
+.classes h1 {
+  margin-bottom: 60px;
+}
+
+.classes {
+  padding: 60px 0px 60px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+}
+
+.classes-child,
+.classes-adult,
+.classes-advanced {
+  background: var(--w);
+  padding: 30px 30px;
+  border-radius: 5px;
+  display: grid;
+  position: relative;
+}
+
+.classes-child::before {
+  content: "";
+  position: absolute;
+  background: url("../../icon/prancha-1x.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 49.78px;
+}
+
+.classes-adult::before {
+  content: "";
+  position: absolute;
+  background: url("../../icon/prancha-2x.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 66px;
+  height: 49.78px;
+}
+
+.classes-advanced::before {
+  content: "";
+  position: absolute;
+  background: url("../../icon/prancha-3x.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 104px;
+  height: 49.78px;
+}
+
+.classes-title {
+  padding-bottom: 30px;
+}
+
+.classes-info {
+  padding: 30px 0px;
+  border-top: 2px solid var(--c1);
+  border-bottom: 2px solid var(--c1);
+}
+
+.classes-info li {
+  display: flex;
+  align-items: center;
+}
+
+.classes-info li::before {
+  content: url("../../icon/dec-topico.svg");
+  display: inline-block;
+  margin-right: 10px;
+}
+.classes-info li + li {
+  margin-top: 10px;
+}
+
+.classes-price {
+  padding: 15px 0px 30px;
+}
+
+.btn-class-registration {
+  display: flex;
+  align-items: center;
+}
+
+.btn-class-registration::after {
+  content: url("../../icon/seta.svg");
+  margin-left: 10px;
+  display: inline-block;
+  margin-left: 60px;
+}
+.classes p a {
+  text-decoration: underline;
+  text-decoration-color: var(--r2);
+}
+
+.classes p:last-child {
+  margin-top: 60px;
+}

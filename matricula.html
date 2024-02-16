@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <title>Surfbot - Escola de Surf</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header-bg">
+        <div class="header-container container">
+            <a href="./index.html"><img src="./surfbot-logo.svg" alt="Surfbot Logo"></a>
+            <nav aria-label="primary navigation">
+                <ul class="font-2-m-b color-w">
+                    <li><a href="index.html#beach">Praia</a></li>
+                    <li><a href="index.html#class">Aulas</a></li>
+                    <li><a href="index.html#contact">Contato</a></li>
+                    <li><a href="matricula.html" class="registration-link">Matricule-se</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Title -->
+    <section class="title-bg">
+        <div class="title container">
+            <h1 class="font-1-l tt-up color-w ta-center">Matricule-se</h1>
+        </div>
+    </section>
+    <!-- Registration -->
+    <main class="registration container">
+        <div class="form-registration">
+            <div class="form-registration-personaldata">
+                <form action="" class="form">
+                    <div class="span-full-size">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="span-full-size">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="span-full-size">
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="111.111.111-11">
+                    </div>
+                    <div>
+                        <label for="endereco">Endereço</label>
+                        <input type="text" id="endereco" name="endereco" placeholder="Rua, nome, número">
+                    </div>
+                    <div>
+                        <label for="state">Estado</label>
+                        <select id="state" name="state">
+                            <option value="RJ">Rio de Janeiro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" name="cep" placeholder="111.111-111">
+                    </div>
+                    <div>
+                        <label for="county">Município</label>
+                        <select id="county" name="county">
+                            <option value="rio_de_janeiro">Rio de Janeiro</option>
+                            <option value="belford_roxo">Belford Roxo</option>
+                            <option value="duque_de_caxias">Duque de Caxias</option>
+                            <option value="guapimirim">Guapimirim</option>
+                            <option value="itaborai">Itaboraí</option>
+                            <option value="itaguai">Itaguaí</option>
+                            <option value="japeri">Japerí</option>
+                            <option value="mage">Magé</option>
+                            <option value="marica">Maricá</option>
+                            <option value="mesquita">Mesquita</option>
+                            <option value="nilopolis">Nilópolis</option>
+                            <option value="niteroi">Niterói</option>
+                            <option value="nova_iguacu">Nova Iguaçu</option>
+                            <option value="paracambi">Paracambi</option>
+                            <option value="petropolis">Petrópolis</option>
+                            <option value="queimados">Queimados</option>
+                            <option value="seropedica">Seropédica</option>
+                            <option value="sao_goncalo">São Gonçalo</option>
+                            <option value="sao_joao_de_meriti">São João de Merití</option>
+                            <option value="tangua">Tanguá</option>
+                            <option value="cachoeiras_de_macacu">Cachoeiras de Macacu</option>
+                            <option value="rio_bonito">Rio Bonito</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="form-registration-payment">
+                <h2 class="font-2-m color-c5">Forma de Pagamento</h2>
+
+                <div class="payment-form">
+                    <input type="radio" id="credit" name="payment" value="credit" id="creditcard">
+                    <label for="credit" class="label-input">Cartão de crédito</label>
+
+                    <input type="radio" id="debit" name="payment" value="debit" id="debitcard">
+                    <label for="debit" class="label-input">Cartão de débito</label>
+
+                    <input type="radio" id="pix" name="payment" value="pix" id="pix">
+                    <label for="pix" class="label-input">Pix</label>
+
+                    <div class="payment-contet" id="payment-cc">
+                        <form action="" class="form">
+                            <div>
+                                <label for="name-card">Nome do Propiretário</label>
+                                <input type="text" id="name-card" name="name-card" placeholder="Nome impresso no cartão">
+                            </div>
+                            <div>
+                                <label for="expirationDate">Data de Expiração</label>
+                                <input type="month" id="expirationDate" name="expirationDate">
+                            </div>
+                            <div>
+                                <label for="card-number">Número do cartão</label>
+                                <input type="text" id="card-number" name="card-number" placeholder="5555 5555 5555 555">
+                            </div>
+                            <div>
+                                <label for="security-number">Número de segurança</label>
+                                <input type="text" id="security-number" name="security-number" placeholder="XXX">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="payment-contet" id="payment-dc">
+                        <form action="" class="form">
+                            <div>
+                                <label for="name-card">Nome do Propiretário</label>
+                                <input type="text" id="name-card" name="name-card" placeholder="Nome impresso no cartão">
+                            </div>
+                            <div>
+                                <label for="expirationDate">Data de Expiração</label>
+                                <input type="month" id="expirationDate" name="expirationDate">
+                            </div>
+                            <div>
+                                <label for="card-number">Número do cartão</label>
+                                <input type="text" id="card-number" name="card-number" placeholder="5555 5555 5555 555">
+                            </div>
+                            <div>
+                                <label for="security-number">Número de segurança</label>
+                                <input type="text" id="security-number" name="security-number" placeholder="XXX">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="payment-contet" id="payment-pix">
+                        <p class="font-2-s color-c4">O código Pix gerado para o pagamento é válido por 30 minutos após a finalização do pedido.</p>
+                        <img src="./img/qrcode.svg" alt="">
+                        <p class="font-2-s-b color-c5">Em caso de erro copie o código abaixo:</p>
+                        <p class="font-2-s color-c3 pdtop-5px pix-code">00020126330014BR.GOV.BCB.PIX01110659634619652040000530398654071000.005802BR5925Gabriel Ferreira de Castr6008Brasilia62160512PAGAMENTO1236304AB8C</p>
+                    </div>
+
+                    <div class="confirmation-payment">
+                        <p class="font-2-m"> Seu cartão será debitado em <span class="value-class color-r3 font-2-m-b"></span></p>
+                        <button class="btn">Realizar Matrícula</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <div class="class-select">
+                <p class="color-c6 font-2-m">Escolha o seu plano:</p>
+                <div class="class-label">
+                    <input type="radio" id="infantil" name="class" value="infantil" id="infantil">
+                    <label for="infantil" class="label-input">Infantil</label>
+
+                    <input type="radio" id="adulto" name="class" value="adulto" id="adulto">
+                    <label for="adulto" class="label-input">Adulto</label>
+
+                    <input type="radio" id="avancado" name="class" value="avancado" id="avancado">
+                    <label for="avancado" class="label-input">Avançado</label>
+
+                    <div class="classes-content" id="infantil-aula">
+                        <div class="classes-child shadow-1">
+                            <h2 class="classes-title font-2-l-Up color-c6 ta-center">Infantil</h2>
+                            <ul class="classes-info font-2-s color-c6">
+                                <li>Público entre 5 e 15 anos</li>
+                                <li>Equipamentos fornecidos</li>
+                                <li>Horários de Sex. à Sab.</li>
+                                <li>2 horas seguidas de aula</li>
+                            </ul>
+                            <p class="font-2-s-b color-b2 classes-price">R$ 49,00/Aula</p>
+                        </div>
+                    </div>
+                    <div class="classes-content" id="adulto-aula">
+                        <div class="classes-adult shadow-1">
+                            <h2 class="classes-title font-2-l-Up color-c6 ta-center">Adulto</h2>
+                            <ul class="classes-info font-2-s color-c6">
+                                <li>Público entre 16 e 60 anos</li>
+                                <li>Equipamentos fornecidos</li>
+                                <li>Horários de Sex. à Sab.</li>
+                                <li>3 horas seguidas de aula</li>
+                            </ul>
+                            <p class="font-2-s-b color-b2 classes-price">R$ 69,00/Aula</p>
+                        </div>
+                    </div>
+                    <div class="classes-content" id="avancado-aula">
+                        <div class="classes-advanced shadow-1">
+                            <h2 class="classes-title font-2-l-Up color-c6 ta-center">Avançado</h2>
+                            <ul class="classes-info font-2-s color-c6">
+                                <li>Experiência de 5 anos no surf</li>
+                                <li>Leve seu equipamento</li>
+                                <li>Horários de Sex. à Sab.</li>
+                                <li>4 horas seguidas de aula</li>
+                            </ul>
+                            <p class="font-2-s-b color-b2 classes-price">R$ 99,00/Aula</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bg">
+        <div class="footer-content container">
+            <p class="font-2-m-b color-w ta-center">Surfbot © 2023 - Alguns direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="./JavaScript/script.js"></script>
+</body>
+
+<script>
+    const infantilRadioButton = document.getElementById("infantil");
+    const adultoRadioButton = document.getElementById("adulto");
+    const avancadoRadioButton = document.getElementById("avancado");
+    const valueSpan = document.querySelector(".confirmation-payment .value-class");
+
+    function updateValue() {
+        if (infantilRadioButton.checked) {
+            valueSpan.innerHTML = "R$ 49,99";
+        } else if (adultoRadioButton.checked) {
+            valueSpan.innerHTML = "R$ 69,00";
+        } else if (avancadoRadioButton.checked) {
+            valueSpan.innerHTML = "R$ 99,00";
+        } else {
+            valueSpan.innerHTML = ""; // Clear the value if no radio button is selected
+        }
+    }
+
+    // Add event listeners to all radio buttons for efficiency
+    infantilRadioButton.addEventListener("change", updateValue);
+    adultoRadioButton.addEventListener("change", updateValue);
+    avancadoRadioButton.addEventListener("change", updateValue);
+
+    // Update the value initially based on the pre-selected radio button (if any)
+    updateValue();
+</script>
+
+</html>

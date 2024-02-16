@@ -1,0 +1,101 @@
+.contact-bg {
+  padding: 60px 0px;
+  background: url("../../icon/dec-bg.svg") no-repeat center right;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 120px;
+}
+
+.contact-bg h1 {
+  margin-bottom: 60px;
+}
+
+.btn-message {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn-message::after {
+  content: url("../../icon/seta.svg");
+  margin-left: 10px;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.contact-details {
+  border-left: 2px solid var(--c1);
+  display: grid;
+  place-content: start;
+}
+
+.contact-info,
+.contact-Schedule {
+  border-top: 2px solid var(--c1);
+}
+
+.contact-address a {
+  font: 700 1rem/1.35 "Nunito", sans-serif;
+  display: inline-block;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.contact-address a:hover {
+  color: var(--r1);
+  transition: 0.1 ease-in-out;
+}
+
+.contact-info a {
+  display: block;
+  max-width: fit-content;
+}
+
+.contact-info a:hover {
+  color: var(--c6);
+  font-weight: 700;
+  transition: 0.1 ease-in-out;
+}
+
+.contact-address p,
+.contact-info a,
+.contact-Schedule p {
+  font: 400 1rem/1.35 "Nunito", sans-serif;
+  color: var(--c5);
+}
+
+.contact-address,
+.contact-info,
+.contact-Schedule {
+  padding: 15px 30px 15px 0px;
+  margin-left: 15px;
+}
+
+.contact-info a + a,
+.contact-address p + p,
+.contact-Schedule p + p {
+  margin-top: 5px;
+}
+
+.contact-address h2,
+.contact-info h2,
+.contact-Schedule h2 {
+  margin-bottom: 10px;
+}
+
+.contact-Schedule h2 {
+  display: flex;
+  align-items: center;
+}
+
+.contact-Schedule h2::after {
+  content: "";
+  background: var(--after-color);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+}

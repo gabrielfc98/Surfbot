@@ -1,0 +1,33 @@
+.header-bg {
+  background-color: var(--c6);
+  padding: 15px 0px;
+}
+
+.header-container nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-container nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+.header-container nav ul li + li::before {
+  content: url("/icon/dec-separador.svg");
+  margin-right: 10px;
+}
+
+.registration-link {
+  border-bottom: 3px solid var(--r2);
+}
+
+.header-container nav ul li a:hover {
+  color: var(--c2);
+  transition: 0.1s ease-in-out;
+}

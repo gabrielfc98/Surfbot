@@ -1,0 +1,20 @@
+/* Global Styles */
+@import "./global/colors.css";
+@import "./global/typography.css";
+@import "./global/header.css";
+@import "./global/global.css";
+@import "./global/superinfo.css";
+@import "./global/footer.css";
+@import "./global/form.css";
+
+/* Home */
+
+@import "./home/introduction.css";
+@import "./home/beach.css";
+@import "./home/classes.css";
+@import "./home/quote.css";
+@import "./home/contact.css";
+
+/* Registration WebPage */
+
+@import "./matricula/matricula.css";

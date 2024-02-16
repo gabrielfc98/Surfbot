@@ -1,0 +1,22 @@
+.quote-bg {
+  background-image: url("../../img/Home/FotoQuote.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.quote {
+  padding: 133px 0px 133px 0px;
+  display: grid;
+  place-content: center;
+}
+
+.quote span {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.quote h1 {
+  max-width: 18ch;
+  text-align: center;
+}

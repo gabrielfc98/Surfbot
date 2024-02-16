@@ -1,0 +1,11 @@
+.superinfo-bg {
+  background-color: var(--b1);
+}
+
+.superinfo p {
+  text-align: center;
+}
+
+.superinfo {
+  padding: 5px 0px;
+}
