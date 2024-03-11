@@ -111,9 +111,13 @@
 
 .btn-class-registration::after {
   content: url("../../icon/seta.svg");
-  margin-left: 10px;
+  margin-left: 70px;
   display: inline-block;
-  margin-left: 60px;
+}
+
+.btn-class-registration:hover::after {
+  margin-left: 80px;
+  transition: ease-in-out;
 }
 .classes p a {
   text-decoration: underline;
